@@ -16,67 +16,48 @@
       "to": "#dbdbdb"
     }
   },
+  "layout": "sidenav",
+  "font": {
+    "body": {
+      "family": "Roboto"
+    }
+  },
+  "theme": "quill",
   "topbarLinks": [
     {
       "name": "Support",
       "url": "mailto:hi@mintlify.com"
+    },
+    {
+      "name": "Contact",
+      "url": "mailto:hi@mintlify.com"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference",
-      "openapi": "https://tela-agents.fanheroapi.com/openapi.json"
+      "openapi": "https://tela-agents.fanheroapi.com/openapi.json",
+      "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "GitHub",
-      "icon": "github",
-      "url": "https://github.com/TELA-DN/api-agents"
-    }
-  ],
+  "api": {
+    "baseUrl": "https://tela-agents.fanheroapi.com"
+  },
   "navigation": [
     {
       "group": "Get Started",
       "pages": ["introduction", "quickstart", "development"]
     },
     {
-      "group": "Essentials",
+      "group": "Get Started",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/requests"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "github": "https://github.com/TELA-DN/api-agents"
   }
 }
